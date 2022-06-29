@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1a1a1a;
+    color: #646464;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*******************************************************************************************************************/
+/*HEADER*/
+/*******************************************************************************************************************/
+.header-mobile {
+    background-color: #1a1a1a;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.img-header-mobile{
+    width: 85%;
+    margin: 10px auto 10px auto;
+}
+.h1-sections-title{
+    text-align: center;
+    font-size: 100%;
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: #646464 2pt solid;
+    border-bottom: #646464 2pt solid;
+}
+/*******************************************************************************************************************/
+/*FIM DO HEADER*/
+/*******************************************************************************************************************/
+
+
+
+
+
+
+
+/*******************************************************************************************************************/
+/*MAIN*/
+/*******************************************************************************************************************/
+.ol-individual-post-preview{
+    width: 94%;
+    margin: 3% auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+    
+}
+li{
+    margin: 3% auto;
+}
+.img-h2-li-post-preview{
+    width: 45vw;
+    max-height: 25vh;
+}
+.h2-title-individual{
+    font-size: 12pt;
+    text-shadow: 1px 1px 6px black;
+}
+.p-individual{
+    font-size: 10pt;
+    text-shadow: 1px 1px 6px black;
+}
+.a-individual-link{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+.li-individual-post{
+    transition: 0.3s;
+}
+.li-individual-post:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+/*******************************************************************************************************************/
+/*FIM DA MAIN*/
+/*******************************************************************************************************************/
+
+
+
+
+/*******************************************************************************************************************/
+/*FOOTER*/
+/*******************************************************************************************************************/
+.footer-content{
+   background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+   flex-direction: column;
+}
+
+.img-whats{
+    width: 15px;
+    margin-right: 5px;
+}
+
+.a-link-whatsapp{
+    text-decoration: none;
+    color:white;
+    background-color: green;
+    width: 70%;
+    margin: 10px 50px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.span-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-pin{
+    margin: 5px;
+    height: 25px;
+}
+
+/*******************************************************************************************************************/
+/*FIM DO FOOTER*/
+/*******************************************************************************************************************/
+
+
+/*DESKTOP***********************************************************************************************************/
+@media(min-width: 600px) {
+
+    .footer-content{
+        display: flex;
+        
+    }
+
+    .img-header-mobile{
+        width: 35%;
+        margin: 10px auto 10px auto;
+    }
+    .ol-individual-post-preview{
+        width: 94%;
+        margin: 3% auto;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 4%;
+    }
+    li{
+        margin: 3% auto;
+        width: 20%;
+    }
+    .img-h2-li-post-preview{
+        width: 15vw;
+        height: 70vh;
+        max-height: 25vh;
+        transition: 1.3s;
+    }
+    .a-individual-link{
+        transform: scale(1.3);
+        transition: 1.3s;
+    }
+    .a-link-whatsapp:hover{
+        transform: scale(1.3);
+        transition: 0.3s;
+    }
+
+}
